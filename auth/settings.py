@@ -133,6 +133,7 @@ SIMPLE_JWT = {
 CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
+    "https://movie-frontend-lxnw.vercel.app/",
 ]
 
 # Database
