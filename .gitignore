@@ -1,0 +1,21 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Django database
+db.sqlite3
+
+# Virtual environment
+.veen/
+.env
+
+# VS Code settings
+.vscode/
+
+acct
+acct_c
+drf_user
+
+templates/index.html
+templates/login.html
+templates/register.html
