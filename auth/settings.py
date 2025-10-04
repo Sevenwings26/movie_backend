@@ -28,13 +28,13 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 if ENVIRONMENT == "development":
     DEBUG = True
 else:
-    DEBUG = True
+    DEBUG = False
 
 ALLOWED_HOSTS = ["*"]
 # if ENVIRONMENT == "development":
 #     ALLOWED_HOSTS = []
 # else:
-#     ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'dynasty-backend.onrender.com']
+#     ALLOWED_HOSTS = ['localhost', '127.0.0.1', "https://movie-backend-9aqx.onrender.com" ]
 
 # Application definition
 INSTALLED_APPS = [
@@ -146,7 +146,7 @@ CORS_ALLOWED_ORIGINS = [
 #     "https://movie-frontend-lxnw.vercel.app/",
 #     "https://movie-backend-9aqx.onrender.com/",
 # ]
-
+ 
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 if ENVIRONMENT == "development":
