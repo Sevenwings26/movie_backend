@@ -30,7 +30,11 @@ if ENVIRONMENT == "development":
 else:
     DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
+# if ENVIRONMENT == "development":
+#     ALLOWED_HOSTS = []
+# else:
+#     ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'dynasty-backend.onrender.com']
 
 # Application definition
 INSTALLED_APPS = [
@@ -133,8 +137,8 @@ SIMPLE_JWT = {
 CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
-    "https://movie-frontend-lxnw.vercel.app/",
     "https://movie-backend-9aqx.onrender.com/",
+    "https://movie-frontend-lxnw.vercel.app/",
 ]
 
 # CSRF_TRUSTED_ORIGINS = [
