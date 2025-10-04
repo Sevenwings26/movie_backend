@@ -134,7 +134,14 @@ CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
     "https://movie-frontend-lxnw.vercel.app/",
+    "https://movie-backend-9aqx.onrender.com/",
 ]
+
+# CSRF_TRUSTED_ORIGINS = [
+#     "http://localhost:5173",
+#     "https://movie-frontend-lxnw.vercel.app/",
+#     "https://movie-backend-9aqx.onrender.com/",
+# ]
 
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
